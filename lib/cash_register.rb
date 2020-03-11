@@ -38,6 +38,7 @@ class CashRegister
       @total = 0.0 
     else 
       @total -= @last_transaction
+    end
   end
 end
 
