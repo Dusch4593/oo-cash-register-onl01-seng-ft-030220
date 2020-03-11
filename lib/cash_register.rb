@@ -36,7 +36,6 @@ class CashRegister
     self.items.pop()
     if self.items.empty? 
       @total -= @total 
-      binding.pry
     else 
       @total -= @last_transaction
     end
