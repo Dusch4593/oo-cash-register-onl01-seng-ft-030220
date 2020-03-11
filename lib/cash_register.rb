@@ -35,3 +35,5 @@ class CashRegister
     self.class.items
   end
 end
+
+binding.pry
