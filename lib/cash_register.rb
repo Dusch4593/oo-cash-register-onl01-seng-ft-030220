@@ -35,7 +35,3 @@ class CashRegister
     self.class.items
   end
 end
-
-test = CashRegister.new 
-test.add_item("macbook pro", 1000)
-test.apply_discount
