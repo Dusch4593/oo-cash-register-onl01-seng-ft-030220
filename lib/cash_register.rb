@@ -14,6 +14,7 @@ class CashRegister
       @items << item
     }
     self.total += price * quantity
+    @last_transaction = price
   end
   
   def apply_discount 
@@ -36,7 +37,7 @@ class CashRegister
     if self.items == [] 
       @total = 0.0 
     else 
-      @total
+      @total -= @last_transaction
   end
 end
 
