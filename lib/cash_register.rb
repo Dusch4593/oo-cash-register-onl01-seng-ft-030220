@@ -14,7 +14,9 @@ class CashRegister
   end
  
   def add_item(item, price, quantity=1)
-    quantity.
+    quantity.times {
+      self.class.items << item
+    }
     self.total += price * quantity
   end
   
@@ -30,7 +32,7 @@ class CashRegister
   end
   
   def items 
-    
+    self.class.items
   end
 end
 
